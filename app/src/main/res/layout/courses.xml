@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="269dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/colorbackground"
+        android:gravity="center_horizontal">
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="300dp"
+            android:background="@color/pnu_3"
+            app:srcCompat="@android:drawable/btn_dialog" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Courses"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="370dp"
+        android:layout_height="500dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/background">
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/pnu_0"
+        android:gravity="center_horizontal"
+        android:text="Software Engineering CS385"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/pnu_0"
+        android:gravity="center_horizontal"
+        android:text="Computer Graphics CS360"
+        android:textColor="@color/white"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/pnu_0"
+        android:gravity="center_horizontal"
+        android:text="Computer Networks IT221"
+        android:textColor="@color/white"
+        android:textSize="26dp" />
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt3"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background"
+        android:backgroundTint="@color/pnu_0"
+        android:gravity="center_horizontal"
+        android:text="Project Management IS350"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        />
+
+
+</RelativeLayout>

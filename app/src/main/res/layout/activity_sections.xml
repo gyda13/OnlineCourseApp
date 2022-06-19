@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sections">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/colorbackground"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="350dp"
+            android:backgroundTint="@color/pnu_3"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        <GridLayout
+            android:id="@+id/idGVcourses"
+            android:layout_width="351dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:columnCount="1"
+            android:rowCount="5">
+
+
+            <Button
+                android:id="@+id/s6c1"
+                android:onClick="show6c1"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_height="180dp"
+                android:layout_columnWeight="2"
+                android:layout_margin="10sp"
+                android:background="@drawable/background"
+                android:text="6c1"
+                android:textColor="@color/pnu_3"
+                android:textSize="35dp"
+                app:backgroundTint="@color/white"
+                tools:viewBindingType="android.widget.Button" />
+
+
+            <Button
+                android:id="@+id/s6c2"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_height="180dp"
+                android:layout_columnWeight="2"
+                android:layout_margin="10sp"
+                android:background="@drawable/background"
+                android:text="6c2"
+                android:textColor="@color/pnu_3"
+                android:textSize="35dp"
+                app:backgroundTint="@color/white"
+                tools:viewBindingType="android.widget.Button" />
+
+
+            <Button
+                android:id="@+id/s6c3"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_height="180dp"
+                android:layout_columnWeight="2"
+                android:layout_margin="10sp"
+                android:background="@drawable/background"
+                android:text="6c3"
+                android:textColor="@color/pnu_3"
+                android:textSize="35dp"
+                app:backgroundTint="@color/white"
+                tools:viewBindingType="android.widget.Button" />
+
+
+        </GridLayout>
+
+</RelativeLayout>

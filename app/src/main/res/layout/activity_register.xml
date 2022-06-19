@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pnu_0"
+    tools:context=".TeachersRegisteration">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="269dp"
+        android:layout_alignParentEnd="true"
+
+
+        android:background="@drawable/colorbackground"
+
+        android:gravity="center_horizontal">
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="350dp"
+            android:backgroundTint="@color/pnu_3"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="371dp"
+        android:layout_height="701dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/background"
+        android:gravity="center_horizontal"
+        android:outlineAmbientShadowColor="@color/black"></androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center_horizontal"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:hint="ID"
+        android:textSize="25sp"
+
+        />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="First Name"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Last Name"
+        android:textSize="25sp" />
+
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lastname"
+        android:layout_marginTop="10dp"
+        android:hint="password"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/password"
+        android:layout_marginTop="10dp"
+        android:hint="Confirm password"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/signup"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/repassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background"
+        android:gravity="center_horizontal"
+        android:text="Register"
+        android:textSize="20sp"
+        app:backgroundTint="@color/pnu_3" />
+
+
+    <Switch
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/pnu_2"
+        android:checked="false"
+        android:minHeight="30dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:text="Login"
+        android:textSize="20dp" />
+
+</RelativeLayout>

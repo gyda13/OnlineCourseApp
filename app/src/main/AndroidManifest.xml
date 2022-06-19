@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.onlinecourseapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OnlineCourseApp">
+        <activity
+            android:name=".Section6c3"
+            android:exported="false" />
+        <activity
+            android:name=".Section6c2"
+            android:exported="false" />
+        <activity
+            android:name=".Section6c1"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz"
+            android:exported="false" />
+        <activity
+            android:name=".cs385quiz1"
+            android:exported="false" />
+        <activity
+            android:name=".Sections"
+            android:exported="false" />
+        <activity
+            android:name=".Student"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLogin"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRegisteration"
+            android:exported="false" />
+        <activity
+            android:name=".Teachers"
+            android:exported="false" />
+        <activity
+            android:name=".TeachersRegisteration"
+            android:exported="false" />
+        <activity
+            android:name=".TeachersLogin"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
