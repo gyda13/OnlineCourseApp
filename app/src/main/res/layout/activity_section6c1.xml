@@ -44,21 +44,29 @@
         android:layout_marginEnd="17dp"
         android:background="@drawable/background"
         android:gravity="center_horizontal">
+
+        <ScrollView
+            android:layout_width="371dp"
+            android:layout_height="1000dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/info6c1"
+                android:layout_width="300dp"
+                android:layout_height="701dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+
+
+
+        </ScrollView>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-    <TextView
-        android:id="@+id/info6c1"
-        android:layout_width="300dp"
-        android:layout_height="701dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="150dp"
-        android:gravity="center_horizontal"
-        android:text="text"
-        android:textColor="@color/black"
-        android:textSize="20dp"
 
 
-        />
 
 
 

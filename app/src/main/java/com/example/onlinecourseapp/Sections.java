@@ -19,14 +19,10 @@ public class Sections extends AppCompatActivity {
     ImageButton imageButton;
     Button s6c1,s6c2,s6c3;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sections);
-
-
-
 
         imageButton =  findViewById(R.id.imageButton);
         imageButton.setOnClickListener(new View.OnClickListener() {
@@ -36,6 +32,7 @@ public class Sections extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
         s6c1= findViewById(R.id.s6c1);
         s6c1.setOnClickListener(new View.OnClickListener() {
@@ -64,6 +61,7 @@ public class Sections extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
 
 
 

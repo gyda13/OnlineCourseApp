@@ -30,9 +30,6 @@ public class Section6c1 extends AppCompatActivity {
             }
         });
 
-
-
-
         DatabaseHelper DB=new DatabaseHelper(this);
 
 
