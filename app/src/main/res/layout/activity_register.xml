@@ -5,17 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pnu_0"
-    tools:context=".TeachersRegisteration">
+    tools:context=".Teachers.TeachersRegisteration">
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="269dp"
         android:layout_alignParentEnd="true"
-
-
         android:background="@drawable/colorbackground"
-
         android:gravity="center_horizontal">
         <ImageButton
             android:id="@+id/imageButton"
@@ -29,13 +26,14 @@
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="371dp"
-        android:layout_height="701dp"
+        android:layout_width="360dp"
+        android:layout_height="680dp"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="25dp"
         android:background="@drawable/background"
         android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:outlineAmbientShadowColor="@color/black"></androidx.appcompat.widget.LinearLayoutCompat>
 
     <TextView
@@ -46,7 +44,7 @@
         android:gravity="center_horizontal"
         android:text="Register"
         android:textColor="@color/black"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textStyle="bold" />
 
     <EditText
@@ -120,17 +118,18 @@
 
     <Switch
         android:id="@+id/login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/signup"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="70dp"
-        android:backgroundTint="@color/pnu_2"
+        android:layout_width="170dp"
+        android:layout_height="5dp"
+        android:layout_below="@id/repassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="@drawable/switchbackground"
         android:checked="false"
-        android:minHeight="30dp"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
-        android:text="Login"
-        android:textSize="20dp" />
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:text="                LogIn"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
 
 </RelativeLayout>

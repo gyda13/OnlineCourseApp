@@ -9,15 +9,14 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DBNAME="OnlineCourseApp.db";
     public DatabaseHelper(Context context) {
-
         super(context, "OnlineCourseApp.db", null, 1);
-
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table teachers(id TEXT primary key ,password TEXT ,firstname TEXT,lastname TEXT)");
         db.execSQL("create table student(id TEXT primary key,password TEXT ,section TEXT,firstname TEXT,lastname TEXT)");
+        db.execSQL("create table notifications(title TEXT ,course TEXT,msg TEXT ,section TEXT)");
 
 
     }
@@ -26,8 +25,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop Table if exists teachers");
         db.execSQL("drop Table if exists student");
+        db.execSQL("drop Table if exists notifications");
     }
-    public Boolean InsertData(String id,String password,String firstname,String lastname){
+
+
+    public Boolean InsertTeachersData(String id,String password,String firstname,String lastname){
         SQLiteDatabase db= this.getWritableDatabase();
         ContentValues values=new ContentValues();
 
@@ -42,7 +44,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return true;
     }
-    public Boolean checkId(String id){
+    public Boolean checkTeacherId(String id){
         SQLiteDatabase db= this.getWritableDatabase();
         Cursor cursor=db.rawQuery("Select * from teachers where Id=?",new String[] {id});
 
@@ -51,7 +53,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return false;
     }
-    public Boolean checkIdpassword(String id,String password){
+    public Boolean checkTeacherIdpassword(String id,String password){
         SQLiteDatabase db= this.getWritableDatabase();
         Cursor cursor=db.rawQuery("select * from teachers where id=? and password=?",new String[] {id,password});
 
@@ -96,6 +98,30 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         else
             return false;
     }
+
+    public Boolean InsertNotifications(String title,String course,String msg,String section){
+        SQLiteDatabase db= this.getWritableDatabase();
+        ContentValues values=new ContentValues();
+
+        values.put("title",title);
+        values.put("msg",msg);
+        values.put("course",course);
+        values.put("section",section);
+
+        long result=db.insert("notifications",null,values);
+        if(result==-1) return false;
+        else
+            return true;
+    }
+
+    public Cursor Msg6c1(){
+
+        SQLiteDatabase sqLiteDatabase= this.getReadableDatabase();
+        Cursor cursor=sqLiteDatabase.rawQuery("select * from notification where section='6c1'" ,null);
+
+        return cursor;
+    }
+
 
     public Cursor ViewData6c1(){
 

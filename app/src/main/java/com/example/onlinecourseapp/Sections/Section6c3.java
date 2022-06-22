@@ -1,4 +1,4 @@
-package com.example.onlinecourseapp;
+package com.example.onlinecourseapp.Sections;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.example.onlinecourseapp.DatabaseHelper;
+import com.example.onlinecourseapp.R;
 
 public class Section6c3 extends AppCompatActivity {
 

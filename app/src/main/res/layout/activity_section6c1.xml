@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Section6c1">
+    tools:context=".Sections.Section6c1">
 
 
     <androidx.appcompat.widget.LinearLayoutCompat

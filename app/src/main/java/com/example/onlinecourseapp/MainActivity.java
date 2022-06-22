@@ -7,6 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.onlinecourseapp.Students.StudentRegisteration;
+import com.example.onlinecourseapp.Teachers.Teachers;
+import com.example.onlinecourseapp.Teachers.TeachersRegisteration;
+
 public class MainActivity extends AppCompatActivity {
 
 

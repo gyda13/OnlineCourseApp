@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Teachers">
+    tools:context=".Teachers.Teachers">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -18,18 +18,20 @@
 
 
     <ScrollView
+        android:layout_marginTop="80dp"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_gravity="center_horizontal"
-        android:scrollbarSize="900dp"
-        android:fillViewport="true">
+        android:fillViewport="true"
+        >
+
 
         <GridLayout
             android:id="@+id/idGVcourses"
-            android:layout_width="351dp"
+            android:layout_width="350dp"
             android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="15dp"
             android:columnCount="1"
             android:rowCount="5">
 
@@ -37,7 +39,7 @@
             <Button
                 android:id="@+id/sections"
                 style="@style/Widget.MaterialComponents.Button"
-                android:layout_height="180dp"
+                android:layout_height="160dp"
                 android:layout_columnWeight="2"
                 android:layout_margin="10sp"
                 android:drawableLeft="@android:drawable/ic_menu_sort_alphabetically"
@@ -50,6 +52,21 @@
                 tools:viewBindingType="android.widget.Button" />
 
 
+            <Button
+                android:id="@+id/setNotifications"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_height="160dp"
+                android:layout_columnWeight="2"
+                android:layout_margin="10sp"
+                android:background="@drawable/background"
+                android:drawableLeft="@android:drawable/ic_popup_reminder"
+                android:drawableTint="@color/pnu_1"
+                android:text="Set Notifications"
+                android:textColor="@color/pnu_3"
+                android:textSize="25dp"
+                app:backgroundTint="@color/white"
+                tools:viewBindingType="android.widget.Button" />
+
 
 
 
@@ -57,7 +74,7 @@
             <Button
                 android:id="@+id/profile"
                 style="@style/Widget.MaterialComponents.Button"
-                android:layout_height="180dp"
+                android:layout_height="160dp"
                 android:layout_columnWeight="2"
                 android:layout_margin="10sp"
                 android:background="@drawable/background"

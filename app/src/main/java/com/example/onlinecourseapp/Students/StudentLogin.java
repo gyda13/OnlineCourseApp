@@ -1,4 +1,4 @@
-package com.example.onlinecourseapp;
+package com.example.onlinecourseapp.Students;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,10 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.Toast;
+
+import com.example.onlinecourseapp.DatabaseHelper;
+import com.example.onlinecourseapp.MainActivity;
+import com.example.onlinecourseapp.R;
 
 public class StudentLogin extends AppCompatActivity {
 

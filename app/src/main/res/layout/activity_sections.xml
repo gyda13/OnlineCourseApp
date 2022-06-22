@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sections">
+    tools:context=".Sections.Sections">
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -39,7 +39,6 @@
 
             <Button
                 android:id="@+id/s6c1"
-                android:onClick="show6c1"
                 style="@style/Widget.MaterialComponents.Button"
                 android:layout_height="180dp"
                 android:layout_columnWeight="2"

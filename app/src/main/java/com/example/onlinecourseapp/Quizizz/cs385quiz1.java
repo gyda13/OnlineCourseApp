@@ -1,8 +1,10 @@
-package com.example.onlinecourseapp;
+package com.example.onlinecourseapp.Quizizz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.onlinecourseapp.R;
 
 public class cs385quiz1 extends AppCompatActivity {
 

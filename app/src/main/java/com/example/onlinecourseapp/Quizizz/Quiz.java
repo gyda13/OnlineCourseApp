@@ -1,4 +1,4 @@
-package com.example.onlinecourseapp;
+package com.example.onlinecourseapp.Quizizz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+
+import com.example.onlinecourseapp.R;
+import com.example.onlinecourseapp.Students.Student;
 
 public class Quiz extends AppCompatActivity {
 
@@ -38,6 +41,8 @@ public class Quiz extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
 
 

@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".cs385quiz1">
+    tools:context=".Quizizz.cs385quiz1">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

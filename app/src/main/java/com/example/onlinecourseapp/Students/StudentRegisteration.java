@@ -1,4 +1,4 @@
-package com.example.onlinecourseapp;
+package com.example.onlinecourseapp.Students;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +13,10 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Switch;
 import android.widget.Toast;
+
+import com.example.onlinecourseapp.DatabaseHelper;
+import com.example.onlinecourseapp.MainActivity;
+import com.example.onlinecourseapp.R;
 
 public class StudentRegisteration extends AppCompatActivity {
 

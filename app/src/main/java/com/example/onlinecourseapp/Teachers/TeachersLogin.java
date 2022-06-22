@@ -1,4 +1,4 @@
-package com.example.onlinecourseapp;
+package com.example.onlinecourseapp.Teachers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,12 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.Toast;
+
+import com.example.onlinecourseapp.DatabaseHelper;
+import com.example.onlinecourseapp.MainActivity;
+import com.example.onlinecourseapp.R;
+
+
 
 public class TeachersLogin extends AppCompatActivity {
 
@@ -49,7 +55,7 @@ public class TeachersLogin extends AppCompatActivity {
                     Toast.makeText(TeachersLogin.this, "All fields Required",Toast.LENGTH_SHORT).show();
 
                 } else{
-                    Boolean checkuserpass=DB.checkIdpassword(Id,pass);
+                    Boolean checkuserpass=DB.checkTeacherIdpassword(Id,pass);
                     if(checkuserpass==true) {
                         Toast.makeText(TeachersLogin.this, "Login Successful", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), Teachers.class);

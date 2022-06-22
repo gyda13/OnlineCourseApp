@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notifications.SetNotifications">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="269dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/colorbackground"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="350dp"
+            android:backgroundTint="@color/pnu_3"
+            app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Set Notification"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="371dp"
+        android:layout_height="701dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/background"
+        android:gravity="center_horizontal">
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:hint="Title"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/msg"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="230dp"
+        android:hint="set notification"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/course"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="310dp"
+        android:hint="Course Name"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="@color/pnu_1"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/course"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Section"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text2"
+        android:layout_marginLeft="70dp"
+        android:orientation="horizontal"
+
+        >
+
+        <RadioButton
+            android:id="@+id/s6c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:onClick="RadioButtonClicked"
+            android:text="6C1"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/s6c2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_marginLeft="30dp"
+            android:onClick="RadioButtonClicked"
+            android:text="6C2"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/s6c3"
+            android:layout_width="95dp"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:layout_marginLeft="30dp"
+            android:onClick="RadioButtonClicked"
+            android:text="6C3"
+            android:textSize="20dp" />
+
+    </RadioGroup>
+
+
+
+</RelativeLayout>

@@ -10,45 +10,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OnlineCourseApp">
         <activity
-            android:name=".Section6c3"
+            android:name=".Notifications.ViewNotification"
             android:exported="false" />
         <activity
-            android:name=".Section6c2"
+            android:name=".Notifications.SetNotifications"
             android:exported="false" />
         <activity
-            android:name=".Section6c1"
+            android:name=".Sections.Section6c3"
             android:exported="false" />
         <activity
-            android:name=".Quiz"
+            android:name=".Sections.Section6c2"
             android:exported="false" />
         <activity
-            android:name=".cs385quiz1"
+            android:name=".Sections.Section6c1"
             android:exported="false" />
         <activity
-            android:name=".Sections"
+            android:name=".Quizizz.Quiz"
             android:exported="false" />
         <activity
-            android:name=".Student"
+            android:name=".Quizizz.cs385quiz1"
             android:exported="false" />
         <activity
-            android:name=".StudentLogin"
+            android:name=".Sections.Sections"
             android:exported="false" />
         <activity
-            android:name=".StudentRegisteration"
+            android:name=".Students.Student"
             android:exported="false" />
         <activity
-            android:name=".Teachers"
+            android:name=".Students.StudentLogin"
             android:exported="false" />
         <activity
-            android:name=".TeachersRegisteration"
+            android:name=".Students.StudentRegisteration"
             android:exported="false" />
         <activity
-            android:name=".TeachersLogin"
+            android:name=".Teachers.Teachers"
             android:exported="false" />
         <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login" />
+            android:name=".Teachers.TeachersRegisteration"
+            android:exported="false" />
+        <activity
+            android:name=".Teachers.TeachersLogin"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

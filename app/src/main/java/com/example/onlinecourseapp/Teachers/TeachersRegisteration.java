@@ -1,4 +1,4 @@
-package com.example.onlinecourseapp;
+package com.example.onlinecourseapp.Teachers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,10 @@ import android.widget.ImageButton;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import com.example.onlinecourseapp.DatabaseHelper;
+import com.example.onlinecourseapp.MainActivity;
+import com.example.onlinecourseapp.R;
+
 public class TeachersRegisteration extends AppCompatActivity {
 
     EditText password,repassword,firstname,lastname,id;
@@ -24,6 +28,10 @@ public class TeachersRegisteration extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+
+
+
 
         firstname = findViewById(R.id.firstname);
         lastname = findViewById(R.id.lastname);
@@ -52,6 +60,8 @@ public class TeachersRegisteration extends AppCompatActivity {
             }
         });
 
+
+
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,6 +69,8 @@ public class TeachersRegisteration extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
 
 
@@ -79,9 +91,9 @@ public class TeachersRegisteration extends AppCompatActivity {
                     Toast.makeText(TeachersRegisteration.this, "All fields Required", Toast.LENGTH_SHORT).show();
                 } else {
                     if (pass.equals(repass) == true) {
-                        Boolean checkuser = DB.checkId(Id);
+                        Boolean checkuser = DB.checkTeacherId(Id);
                         if (checkuser == false) {
-                            Boolean insert = DB.InsertData(Id, pass,FirstName,LastName);
+                            Boolean insert = DB.InsertTeachersData(Id, pass,FirstName,LastName);
                             if (insert == true) {
                                 Toast.makeText(TeachersRegisteration.this, "Registerd Successfully", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(getApplicationContext(), Teachers.class);

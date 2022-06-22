@@ -1,4 +1,4 @@
-package com.example.onlinecourseapp;
+package com.example.onlinecourseapp.Teachers;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,12 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
+
+import com.example.onlinecourseapp.R;
+import com.example.onlinecourseapp.Sections.Sections;
+import com.example.onlinecourseapp.Notifications.SetNotifications;
 
 public class Teachers extends AppCompatActivity {
 
 
-    Button sections;
+    Button sections,setNotifications;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,15 @@ public class Teachers extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Teachers.this, Sections.class);
+                startActivity(intent);
+            }
+        });
+
+        setNotifications= findViewById(R.id.setNotifications);
+        setNotifications.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Teachers.this, SetNotifications.class);
                 startActivity(intent);
             }
         });

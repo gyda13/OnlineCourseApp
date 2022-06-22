@@ -1,4 +1,4 @@
-package com.example.onlinecourseapp;
+package com.example.onlinecourseapp.Students;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,15 +9,28 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.example.onlinecourseapp.Quizizz.Quiz;
+import com.example.onlinecourseapp.R;
+import com.example.onlinecourseapp.Notifications.ViewNotification;
+
 public class Student extends AppCompatActivity {
 
-    Button quiz,courses;
+    Button quiz,courses,notification;
     AlertDialog dialog;
     AlertDialog.Builder builder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student);
+
+        notification=  findViewById(R.id.notification);
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Student.this, ViewNotification.class);
+                startActivity(intent);
+            }
+        });
 
         quiz =  findViewById(R.id.quiz);
         quiz.setOnClickListener(new View.OnClickListener() {
