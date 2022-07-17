@@ -1,9 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Quizizz.cs385quiz1">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Software Engineering Quiz"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"/>
+
+
+    <TextView
+        android:id="@+id/txtq1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txt"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="The state Machine Diagram Show ......."
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/q1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="130dp">
+
+
+            <RadioButton
+                android:id="@+id/q1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="External Perspective"
+                android:onClick="RadioButtonClickedQ1"/>
+
+            <RadioButton
+                android:id="@+id/q1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Behavioral Perspective"
+                android:onClick="RadioButtonClickedQ1"/>
+
+            <RadioButton
+                android:id="@+id/q1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Structural Perspective"
+                android:onClick="RadioButtonClickedQ1"/>
+        </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txtq2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/q1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="State Machine Diagrams is a?"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/q2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txtq2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <RadioButton
+                android:id="@+id/q2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Structural"
+                android:onClick="RadioButtonClickedQ2"/>
+
+            <RadioButton
+                android:id="@+id/q2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Behavioral"
+                android:onClick="RadioButtonClickedQ2"/>
+
+
+        </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txtq3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/q2"
+        android:layout_marginLeft="20dp"
+        android:text="In a Network diagram to calculate the early  finish we add the Early start to the duration."
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+        <RadioGroup
+            android:id="@+id/q3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txtq3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            >
+
+
+            <RadioButton
+                android:id="@+id/q3_true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="True"
+                android:onClick="RadioButtonClickedQ3"/>
+
+            <RadioButton
+                android:id="@+id/q3_false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="False"
+                android:onClick="RadioButtonClickedQ3"/>
+
+
+        </RadioGroup>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/switchbackground" />
+
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:background="@drawable/background"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white" />
+
+</RelativeLayout>

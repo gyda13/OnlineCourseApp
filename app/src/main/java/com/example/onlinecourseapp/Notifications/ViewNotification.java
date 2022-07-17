@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
+import android.database.Cursor;
 import com.example.onlinecourseapp.DatabaseHelper;
 import com.example.onlinecourseapp.R;
 import com.example.onlinecourseapp.Students.Student;
@@ -36,7 +36,7 @@ public class ViewNotification extends AppCompatActivity {
 
         DatabaseHelper DB=new DatabaseHelper(this);
 
-/*
+
         not =  findViewById(R.id.not);
         Cursor cursor=DB.Msg6c1();
         StringBuilder stringBuilder=new StringBuilder();
@@ -53,7 +53,7 @@ public class ViewNotification extends AppCompatActivity {
 
         }
 
- */
+
 
     }
 }

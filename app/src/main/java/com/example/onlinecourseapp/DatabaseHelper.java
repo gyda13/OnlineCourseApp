@@ -19,6 +19,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("create table notifications(title TEXT ,course TEXT,msg TEXT ,section TEXT)");
 
 
+
     }
 
     @Override
@@ -117,7 +118,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public Cursor Msg6c1(){
 
         SQLiteDatabase sqLiteDatabase= this.getReadableDatabase();
-        Cursor cursor=sqLiteDatabase.rawQuery("select * from notification where section='6c1'" ,null);
+        Cursor cursor=sqLiteDatabase.rawQuery("select * from notifications where section='6c1'" ,null);
 
         return cursor;
     }
