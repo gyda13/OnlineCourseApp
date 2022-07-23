@@ -8,7 +8,7 @@
 ![Screenshot (26)](https://user-images.githubusercontent.com/90142160/180616474-714fb639-962f-4cd7-a608-e96e3124956c.png)
 ![Screenshot (28)](https://user-images.githubusercontent.com/90142160/180616477-9ec2303c-45f0-4d79-979d-fd229131e3bb.png)
 ## Teachers
-![Screenshot (33)](https://user-images.githubusercontent.com/90142160/180616862-d409d744-0e4e-4099-b5fb-0e4b036ba7d4.png)
 ![Screenshot (29)](https://user-images.githubusercontent.com/90142160/180616480-875f4d61-b746-474a-a956-a3cf61fc022d.png)
+![Screenshot (33)](https://user-images.githubusercontent.com/90142160/180616862-d409d744-0e4e-4099-b5fb-0e4b036ba7d4.png)
 ![Screenshot (30)](https://user-images.githubusercontent.com/90142160/180616486-dabf6310-38dc-4862-b777-e0fe60e7222f.png)
 ![Screenshot (31)](https://user-images.githubusercontent.com/90142160/180616487-82898d8e-4abf-4e6d-991d-bcb574056d5c.png)
