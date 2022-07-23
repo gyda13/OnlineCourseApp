@@ -61,6 +61,7 @@ public class StudentLogin extends AppCompatActivity {
                     if(checkuserpass==true) {
                         Toast.makeText(StudentLogin.this, "Login Successful", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), Student.class);
+                        intent.putExtra("StudentId",Id);
                         startActivity(intent);
                     }else{
                         Toast.makeText(StudentLogin.this, "Login Failed, Id or password is wrong!", Toast.LENGTH_SHORT).show();

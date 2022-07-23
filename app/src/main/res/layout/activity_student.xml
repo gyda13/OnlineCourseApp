@@ -15,6 +15,7 @@
         android:gravity="center_horizontal">
 
 
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 
@@ -51,20 +52,6 @@
                 app:backgroundTint="@color/white"
                 tools:viewBindingType="android.widget.Button" />
 
-
-            <Button
-                android:id="@+id/marks"
-                style="@style/Widget.MaterialComponents.Button"
-                android:layout_height="160dp"
-                android:layout_columnWeight="2"
-                android:layout_margin="10sp"
-                android:background="@drawable/background"
-                android:drawableLeft="@android:drawable/checkbox_on_background"
-                android:text="marks"
-                android:textColor="@color/pnu_3"
-                android:textSize="25dp"
-                app:backgroundTint="@color/white"
-                tools:viewBindingType="android.widget.Button" />
             <Button
                 android:id="@+id/courses"
                 style="@style/Widget.MaterialComponents.Button"
@@ -96,7 +83,7 @@
                 tools:viewBindingType="android.widget.Button" />
 
             <Button
-                android:id="@+id/profile"
+                android:id="@+id/logout"
                 style="@style/Widget.MaterialComponents.Button"
                 android:layout_height="160dp"
                 android:layout_columnWeight="2"
@@ -104,7 +91,7 @@
                 android:background="@drawable/background"
                 android:drawableLeft="@android:drawable/ic_lock_idle_lock"
                 android:drawableTint="@color/pnu_1"
-                android:text="profile"
+                android:text="Logout"
                 android:textColor="@color/pnu_3"
                 android:textSize="25dp"
                 app:backgroundTint="@color/white"
